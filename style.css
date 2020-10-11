@@ -1,0 +1,292 @@
+header {
+	text-align: center;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	margin: 100px 10px auto auto;
+  }
+  
+.flex-container-1 {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	margin: 40px 10px auto auto;
+}
+
+.container {
+	width: 270px;
+	height: 270px;
+
+}
+
+.bread {
+	width: 100%;
+	height: 100%;
+}
+
+
+.page {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.page-title {
+	margin: 100px 10px auto auto;
+	font-size: 2em
+}
+
+.information {
+	text-align: center;
+}
+
+.product-name {
+	font-size: 2em;
+}
+
+.price-off {
+	color: red
+}
+
+.cover {
+	display: flex; 
+	justify-content: space-between;
+}
+
+.yellow-background {
+		width: 60%;
+		float: right;
+		height: auto;
+		padding: 0px;
+		border: none;    
+		background-color: #FEB103; 
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
+}
+
+.hero-picture {
+	width: 100%;
+}
+
+.words {
+	color: white;
+	font-size: 2em;
+	text-align: center;
+} 
+
+.topnav {
+  overflow: hidden;
+  height: 100px;
+  align-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topnav > .logo {
+  height: 80%;
+  margin: 5px;
+  margin-left: 5%;
+}
+
+.topnav a {
+	color: #000000;
+	text-decoration: none;
+  }
+  
+
+.topnav a:hover {
+  color: #FEB103;
+  text-decoration: none;
+}
+
+.topnav a.active {
+  color: #FEB103;
+  text-decoration: none;
+}
+
+.topnav-right {
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.flex-description-background {
+	display: flex;
+	background-color: white;
+	flex-wrap: nowrap;
+  }
+  
+/* .flex-description-background > div {
+	background-color: #FFFFFF;
+	margin: 10px;
+	padding: 20px;
+	font-size: 1 em;
+	width: 33%;
+  } */
+
+.first-div {
+	background-color: #FFFFFF;
+	margin: 10px;
+	/* padding: 20px; */
+	width: 30%;
+}
+
+.second-div {
+	background-color: #FFFFFF;
+	margin-left: 10px;
+	padding-left: 20px;
+	width: 40%;
+}
+
+.third-div {
+	background-color: #FFFFFF;
+	padding: 20px;
+	width: 25%;
+	border-top-left-radius: 50px;
+	box-shadow: -2px -2px 7px 2px #CCCCCC;
+	position: fixed;
+	top: 20%;
+	right: 0; 
+	/* position: sticky;
+	top: 0;
+    padding: 5px; */
+	height: 100%;
+
+	
+}
+
+
+
+  .page-description-title {
+	margin: 60px 30px 10px 10px;
+	padding-bottom: 20px;
+    font-size: 2em
+  }
+
+  .page-description {
+	width: 80%;
+	margin: 0 auto;
+
+  }
+
+  /* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides1 {
+	display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+
+  
+  /* The dots/bullets/indicators */
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+  
+  .description-price {
+     font-size: 1.5em;
+  }
+
+.numbers-content {
+	display: flex;
+	margin-top: 30px;
+	width: 150%;
+}
+
+.numbers-title {
+	margin-right: 50px;
+	font-size: 1.5em;
+}
+
+.numbers-selection {
+	font-size: 1.5em;
+}
+
+.sidebar {
+	margin-left: 50px;
+}
+
+.sidebar-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sidebar-bread {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.sidebar-imgwrap {
+	width: 50%;
+}
+
+.sidebar-words {
+	font-size: 1.2em;
+	align-self: center;
+	margin-left: 30px;
+	width: 50%;
+}
+
+#submit {
+	margin: 30px auto;
+	background-color: #C4C4C4;
+	color: white;
+	border: none;
+	padding: 20px 30px;
+	border-radius: 5px;
+	font-size: 1.3em;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	cursor: not-allowed
+}
+
+html *
+{
+	font-family: "open sans" !important;
+}
