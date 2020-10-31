@@ -14,7 +14,7 @@
                 </a>
               <div class="topnav-right">
                 <a href="product page.html">Products</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="settings.html">Carts</a>
+				<a id="cart" href="settings.html">Carts</a>
               </div>
             </div>
         </header>
@@ -69,10 +69,10 @@
                                 Number
                                 </div>
                                 <div class="numbers-selection">
-                                <INPUT TYPE="Radio" Name="Gender" Value="Male">&nbsp;1<br>
-                                <INPUT TYPE="Radio" Name="Gender" Value="Female">&nbsp;3<br>
-                                <INPUT TYPE="Radio" Name="Gender" Value="Male">&nbsp;6<br>
-                                <INPUT TYPE="Radio" Name="Gender" Value="Female">&nbsp;12
+                                <INPUT TYPE="Radio" Name="number" Value="1" onclick="checkNum()">&nbsp;1<br>
+                                <INPUT TYPE="Radio" Name="number" Value="3" onclick="checkNum()">&nbsp;3<br>
+                                <INPUT TYPE="Radio" Name="number" Value="6" onclick="checkNum()">&nbsp;6<br>
+                                <INPUT TYPE="Radio" Name="number" Value="12" onclick="checkNum()">&nbsp;12
                                 </div>
                             </div>
 
@@ -87,8 +87,12 @@
                                 <INPUT TYPE="Radio" Name="Gender" Value="Female">&nbsp;Double-chocolate
                                 </div>
                             </div>
+                            
+                            <div id="summary">
+                                
+                            </div>
 
-                            <button id="submit">Add to bag</button>
+                            <button id="submit" onclick="addToBag()">Add to bag</button>
         
                     </div>
                 </div>
@@ -131,4 +135,5 @@
             </div>
         </div>
     </body>
+    <script src="script.js"></script>
 </html>     

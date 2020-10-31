@@ -286,7 +286,61 @@ header {
 	cursor: not-allowed
 }
 
+button.clickable {
+    cursor: pointer !important;
+    background-color: #FEB103 !important; 
+}
+
+button.clickable:hover {
+    background-color: #e39f00 !important;
+}
+
+button.clickable:visited {
+    background-color: #e39f00 !important;
+}
+
 html *
 {
 	font-family: "open sans" !important;
 }
+
+table {
+	font-family: "Open sans";
+	width: 80%;
+	border: none;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  th, td {
+	text-align: center;
+	padding: 10px;
+  }
+	  
+  .total {
+	border-top: 1px solid #000;
+	font-weight: bold;
+  }
+  
+  .delete {
+	color: #e39f00; 
+  }
+
+  #checkout {
+	margin: 30px auto;
+	background-color: #e39f00;
+	color: white;
+	border: none;
+	padding: 20px 30px;
+	border-radius: 5px;
+	font-size: 1.3em;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+  }
+
+  #bread-checkout {
+	  width: 20%;
+  }
