@@ -5,6 +5,26 @@
 		<meta charset="UTF-8">
 		 <!-- styles -->
 		 <link rel="stylesheet" type="text/css" href="style.css">
+		 <script type="text/javascript">
+			 function del() {
+				document.getElementById("toBeDeleted").style.display = "none";
+				document.getElementById("cnt").innerHTML = "0";
+				document.getElementsByClassName("price")[1].innerHTML = "$0";
+				sessionStorage.setItem("cart-to-setting", 0);
+			 }
+			
+			 window.onload = function(){
+				var cnt = sessionStorage.getItem("cart-to-setting");
+				console.log(cnt);
+				document.getElementById("item-number").value = cnt;
+				document.getElementById("cnt").innerHTML = cnt.toString();
+				var p = "$" + (parseInt(cnt) * 9).toString();
+				var prices = document.getElementsByClassName("price");
+				for(var i = 0; i < prices.length; i++) {
+					prices[i].innerHTML = p;
+				}	
+			 }
+		</script>
     </head>
     
     <body>
@@ -41,20 +61,20 @@
 					  <th>Price</th>
 					  <th></th>
 					</tr>
-					<tr>
+					<tr id="toBeDeleted">
 					  <td><img id="bread-checkout" src="bread1.png" alt="bread1"></td>
 					  <td>Blackberry roll</td>
 					  <td>None</td>
-					  <td><input type="text" name="number" value="3" size="1"></td>
-					  <td>$27</td>
-					  <td class="delete">Delete</td>
+					  <td><input type="text" id="item-number" name="number" size="1"></td>
+					  <td class="price"></td>
+					  <td class="delete" onclick="del()">Delete</td>
 					</tr>
 					<tr>
 					  <td class="total">Total</td>
 					  <td class="total"></td>
 					  <td class="total"></td>
-					  <td class="total">3</td>
-					  <td class="total">$27</td>
+					  <td class="total" id="cnt"></td>
+					  <td class="total price"></td>
 					  <td class="total"></td>
 					</tr>
 				  </table>
@@ -62,5 +82,6 @@
 			
 		</div>
 
-    </body>
+	</body>
+	
 </html>

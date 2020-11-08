@@ -1,5 +1,5 @@
 console.log("loaded");
-var cart_num = 0;
+sessionStorage.setItem("cart-to-setting", 0);
 
 function getNum() {
     var num = document.getElementsByName('number');
@@ -23,6 +23,9 @@ function checkNum() {
 
 function addToBag() {
     var num_value = getNum();
+    var cart_num = parseInt(sessionStorage.getItem("cart-to-setting"));
     cart_num += num_value;
+    sessionStorage.setItem("cart-to-setting", cart_num);
     document.getElementById("cart").innerHTML = "Carts" + "(" + cart_num.toString() + ")";
 }
+

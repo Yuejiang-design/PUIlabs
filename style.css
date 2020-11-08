@@ -325,6 +325,7 @@ table {
   
   .delete {
 	color: #e39f00; 
+	cursor: pointer;
   }
 
   #checkout {
